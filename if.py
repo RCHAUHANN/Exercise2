@@ -23,7 +23,7 @@ else:
 
 #3
 
-gender = input("What is your gender?(male/female")
+gender = input("What is your gender?(male/female)")
 
 
 if gender== "male":
