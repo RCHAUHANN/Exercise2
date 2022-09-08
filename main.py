@@ -1,6 +1,7 @@
 #1
 name =input("enter your name:")
 print("hello,"+name+".")
+
 import math
 import random
 
