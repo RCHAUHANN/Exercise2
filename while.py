@@ -10,17 +10,17 @@ while n<=1000:
 #2
 inch = float(input("please enter a number in inches"))
 cm= inch*2.54
-print("the value in centimeters is: "+ str(cm))
-while inch<0:
 
+while inch>=0:
+    print("the value in centimeters is: " + str(cm))
+else:
     print("NO NEGATIVE VALUE")
-    break
+
+
 
 #3
 largest = 0
 smallest = 0
-
-
 
 while True:
     num = input("Enter a number: ")
@@ -71,8 +71,8 @@ counter=0
 while True:
     N = int(input("enter the amount to generate"))
     while counter<= N:
-        x= random.uniform(0, 1)
-        y=random.uniform(0, 1)
+        x= random.uniform(-1, 1)
+        y=random.uniform(-1, 1)
         if x**2 + y**2<1:
             n+=1
     pi_approx =(4*n)/N
