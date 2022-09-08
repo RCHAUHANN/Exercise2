@@ -13,8 +13,10 @@ cm= inch*2.54
 
 while inch>=0:
     print("the value in centimeters is: " + str(cm))
+    break
 else:
     print("NO NEGATIVE VALUE")
+
 
 
 
