@@ -10,18 +10,23 @@ for sum_dice in range (num_dice):
     sum_dice +=1
 
 #2
-#num= int(input('enter a number: '))
-#input_list=[]
-#input_list.append(num)
-#while True:
-   # if num =="":
-       # break
-   # else:
-        #num = int(input('enter a number: '))
-    #input_list.append(num)
-    #input_list.sort(reverse=True)
+num= int(input('enter a number: '))
+input_list=[]
+input_list.append(num)
 
-#print(input_list)
+
+
+while True:
+       print(num)
+       if num =="":
+           break
+           for num in range(5):
+               input_list.append(num)
+               input_list.sort(reverse=True)
+
+
+
+print(input_list)
 
 
 #3
