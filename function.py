@@ -29,13 +29,13 @@ while value< blah:
         break
     value=dice_num(blah)
 print(value)
+
 #3
+
 def gallons(n):
     litres= n*3.785
     print(f"Amount in litres {litres:.2f}")
     return litres
-
-
 
 
 while True:
@@ -48,6 +48,7 @@ while True:
 
 
 #4
+
 def sum(numbers):
     total = 0
     for x in numbers:
@@ -59,6 +60,7 @@ list=[2,6,5,4,8]
 print(sum(list))
 
 #5
+
 def list(list1):
 
     for num in list1:
@@ -75,6 +77,7 @@ print(potato)
 
 
 #6
+
 import math
 def pizza(diameter,euro):
 
