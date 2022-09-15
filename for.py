@@ -47,7 +47,7 @@ else:
 
 city =[]
 for i in range(5):
-   city_name= input("enter the name of a city: ")
+    city_name = input("enter the name of a city: ")
    city.append(city_name)
 
 for x in range (len(city)):
