@@ -19,7 +19,7 @@ print(value)
 def dice_num(sides):
     dice_roll = random.randint(1, sides)
     return dice_roll
-blah = int(input("number pof sides?"))
+blah = int(input("number of sides?"))
 value= dice_num(blah)
 while value< blah:
     print(value)

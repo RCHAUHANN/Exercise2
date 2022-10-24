@@ -31,6 +31,7 @@ avg= sum/3
 print(" the sum is: "+str(sum)+" the product is: "+str(product)+" the average is: "+str(avg))
 
 #5
+
 talent= input("enter the talent:")
 pound= input("enter the pounds:")
 lot= input ("enter the lots:")

@@ -29,7 +29,7 @@ while True:
     if num =="":
      break
     if largest == 0 or num >= largest: largest = num
-    else: largest= largest
+    else: largest = largest
     if smallest == 0 or num <= smallest: smallest = num
     else: smallest= smallest
 
@@ -72,7 +72,7 @@ n=0
 counter=0
 while True:
     N = int(input("enter the amount to generate"))
-    while counter<= N:
+    while counter <= N:
         x= random.uniform(-1, 1)
         y=random.uniform(-1, 1)
         if x**2 + y**2<1:
