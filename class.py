@@ -44,26 +44,59 @@ car.dist= 2000
 print(f"the distance travelled is {car.dist} km and the speed is {car.current_speed}")
 
 car.drive(1.5)
-print(f"the distance in 1.5h is {car.dist}")
-"""
+print(f"the distance in 1.5h is {car.dist}")"""
+
 #4
+
+
+class Race:
+    def __init__(self, name, distance, car_list):
+        self.name = name
+        self.distance =  distance
+        self. car_list= car_list
+
+
+    def hour_passes(self):
+        for car in self.car_list:
+            car.accelerate(random.randint(-10,15))
+            car.drive(1.)
+
+
+
+    def print_status(self):
+        print(self.name +":")
+        for car in self.car_list:
+            print(f"{car.reg_num}: {car.current_speed}, {car.dist}km")
+
+
+
+    def race_finished(self):
+        for car in self.car_list:
+            if car.dist>= self.distance:
+                return True
+        return False
+
+
 car_list =[]
 
 for i in  range(10):
     car_list.append(Car("ABC-"+ str(i+1), random.randint(100, 200)))
 
+race = Race("Grand Demolition Derby", 8000, car_list)
 
-travelled_max=0
-while travelled_max < 10000:
-    for car in car_list:
-        car.accelerate(random.randint(-10, 15))
-        car.drive(1)
-        travelled_max= max(car.dist, travelled_max)
-
+n=0
+while not race.race_finished()  :
+    race.hour_passes()
+    n=+1
+    race.race_finished()
+    if n%10 ==0:
+        for car in car_list:
+            print(f"{car.reg_num} : {car.max_speed}, {car.dist}")
 
 for car in car_list:
     print(f"{car.reg_num} : {car.max_speed}, {car.dist}")
-print(f"the winner was able to travel:{travelled_max}")
+print(f"the winner was able to travel:{race.distance}")
+
 
 
 
