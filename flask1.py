@@ -1,8 +1,8 @@
-import flask,requests,response
+from flask import Flask
 import mysql.connector
 
 
-app = flask(__name__)
+app = Flask(__name__)
 @app.route('/prime_number/<number>')
 
 def prime_number(number):
